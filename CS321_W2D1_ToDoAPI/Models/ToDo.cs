@@ -5,7 +5,6 @@ namespace CS321_W2D2_ToDoAPI.Models
 {
     public class ToDo
     {
-        [Required]
         public int Id { get; set; }
 
         [Required]
