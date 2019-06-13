@@ -51,7 +51,7 @@ namespace CS321_W2D2_ToDoAPI.Controllers
             catch (System.Exception ex)
             {
                 ModelState.AddModelError("AddToDo", ex.Message);
-                return BadRequest(ModelState);
+                return ValidationProblem(); // or return BadRequest(ModelState);
             }
 
             // return a 201 Created status. This will also add a "location" header
